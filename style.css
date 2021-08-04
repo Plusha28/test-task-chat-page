@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow:  hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+input, button, textarea{
+    font-family: inherit;
+}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+.header {
+    height: 50px;
+    width: 100%;
+    float: left;
+}
+.menu {
+    float: left;
+}
+
+.tab {
+    display: inline;
+    border: 2px solid #0066FF;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+.tab a:hover {
+    background-color: #00BFFF;
+    margin: -10px;
+    padding: 10px;
+}
+
+
+.navbar {
+    margin: 5px;
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+}
+#navbar a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+
+}
+#navbar a:hover {
+    border-radius: 20px 5px;
+    background-color: #0066FF;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.users {
+    width: 200px;
+    float: left;
+    background-color: aqua;
+    overflow-y: scroll;
+}
+
+.icon-container {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: -10px;
+    margin-right: -40px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.status-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.list-users {
+    flex-direction: row;
+}
+.username {
+    font-size: 16px;
+    flex-grow: 1;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.icon-name-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.chat {
+    float: left;
+    background-color: blue;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+.footer {
+    background-color: brown;
+    height: 100px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
