@@ -14,33 +14,21 @@ a:focus, a:active{outline: none;}
 
 
 html, body {
-    height: 100%;
-    width: 100%;
-    line-height: 1;
+    max-height: 100vh;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow:  hidden;
     display: flex;
     flex-direction: column;
 }
 
-input, button, textarea{
-    font-family: inherit;
-}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding: 0; border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
 
 .header {
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     float: left;
+    background-color: #FDEED9;
 }
 .menu {
     float: left;
@@ -48,16 +36,17 @@ img{vertical-align: top;}
 
 .tab {
     display: inline;
-    border: 2px solid #0066FF;
-    border-radius: 5px;
+    border: 2px solid #808080;
+    border-radius: 3px;
     margin: 5px;
-    padding: 10px;
+    padding: 6px;
     font-size: 20px;
+    background-color: white;
 }
 .tab a:hover {
-    background-color: #00BFFF;
-    margin: -10px;
-    padding: 10px;
+    background-color: #FDEED9;
+    margin: -6px;
+    padding: 6px;
 }
 
 
@@ -85,12 +74,14 @@ img{vertical-align: top;}
 .main {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    overflow: hidden;
 }
+
+
 .users {
     width: 200px;
+    height: 100%;
     float: left;
-    background-color: aqua;
     overflow-y: scroll;
 }
 
@@ -137,14 +128,60 @@ img {
 
 .chat {
     float: left;
-    background-color: blue;
     flex-grow: 1;
     overflow-y: scroll;
 }
+
+.me {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #808080;
+    border-radius: 3px;
+    background-color: #AFEEEE;
+}
+
+.companion-name {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #808080;
+    border-radius: 3px;
+
+}
+
+.user-name {
+    font-size: 18px;
+
+    font-weight: bold;
+    margin: 5px;
+}
+
+.message{
+    font-size: 18px;
+}
+
+.msg-time {
+    font-size: 14px;
+    font-style: italic;
+}
+
 .footer {
-    background-color: brown;
-    height: 100px;
-    float: left;
-    width: 100%;
-    text-align: left;
+    min-height: 100px;
+    background-color: #FDEED9;
+}
+
+input[type=text] {
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.entry-field {
+    height: 50px;
+    width: 60%;
+}
+
+.btn-send {
+    height: 50px;
+    width: 80px;
+    border: 2px solid #808080;
+    border-radius: 3px;
 }
