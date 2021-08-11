@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
     <title>Чат</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> <!--Подключение библитеки JQuery-->
+    <!--Стрелочная функция с использованием "JQuery"-->
+    <script>
+        $(function () {  <!--$(document).ready(function () - при добавлении запустит скрипт тогда, когда модель страницы(DOM) будет готова для выполнения кода-->
+            $(".colored").css("background-color", "red"); <!--Через метод css обращаемся к элементу страницы по его классу и меняем цвет-->
+            setTimeout(() => {  <!--Устанавливаем таймаут-->
+                $(".colored").css("background-color", "white")
+            }, 900);  <!--По истечении времени фоновый цвет кнопки станет другим-->
+        })
+    </script>
 </head>
 <body>
 <!--Шапка-->
 <header class="header">
     <nav class="menu">
         <ul class="navbar">
-            <li class="tab"><a href="#">Главная</a></li>
-            <li class="tab"><a href="#">Новости</a></li>
-            <li class="tab"><a href="#">Чат</a></li>
+            <li class="tab colored"><a href="#">Главная</a></li>
+            <li class="tab colored"><a href="#">Новости</a></li>
+            <li class="tab colored"><a href="#">Чат</a></li>
         </ul>
     </nav>
 </header>
@@ -183,7 +193,7 @@
 </div>
 <!--Окно чата-->
 <div class="chat">
-        <div class="chat-list">
+
             <ul>
                 <li class="companion-name">
                     <div class="name">
@@ -303,7 +313,6 @@
                     </div>
                 </li>
             </ul>
-        </div>
 </div>
 </main>
 
@@ -313,6 +322,7 @@
     <input class="entry-field" type="text" value="">
     <input class="btn-send" type="button" value="Отправить">
 </footer>
+
 
 </body>
 </html>

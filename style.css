@@ -1,3 +1,5 @@
+
+/*сброс всех границ и лишних отступов*/
 *{
     padding: 0;
     margin: 0;
@@ -14,174 +16,173 @@ a:focus, a:active{outline: none;}
 
 
 html, body {
-    max-height: 100vh;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    display: flex;
-    flex-direction: column;
+    max-height: 100vh; /*максимальная высота страницы*/
+    font-size: 14px;  /*размер шрифта на странице*/
+    -ms-text-size-adjust: 100%;   /*алгоритм увеличения текста на мобильных и планшетах*/
+    -moz-text-size-adjust: 100%;   /*алгоритм увеличения текста на мобильных и планшетах*/
+    -webkit-text-size-adjust: 100%;   /*алгоритм увеличения текста на мобильных и планшетах*/
+    display: flex;   /*добавление дочерним элементам свойства flex*/
+    flex-direction: column;   /*расположение элементов flex вертикально друг под другом*/
 }
 
 
 .header {
-    min-height: 50px;
-    width: 100%;
-    float: left;
-    background-color: #FDEED9;
+    min-height: 50px;  /*высота*/
+    width: 100%;   /*ширина*/
+    float: left;   /*выравнивание по левому краю*/
+    background-color: #FDEED9;    /*фоновый цвет*/
 }
 .menu {
-    float: left;
+    float: left;   /*выравнивание по левому краю*/
 }
 
 .tab {
-    display: inline;
-    border: 2px solid #808080;
-    border-radius: 3px;
-    margin: 5px;
-    padding: 6px;
-    font-size: 20px;
-    background-color: white;
+    display: inline;   /*расположение дочерних элементов горизонтально друг за другом*/
+    border: 2px solid #808080;    /*рамка из сплошной линии вокруг элемента шириной 2 пикселя серого цвета*/
+    border-radius: 3px;    /*радиус рамки*/
+    margin: 5px;    /*внешний отступ*/
+    padding: 6px;   /*внутренний отступ*/
+    font-size: 20px;    /*размер шрифта*/
+    background-color: white;    /*фоновый цвет*/
 }
 .tab a:hover {
-    background-color: #FDEED9;
-    margin: -6px;
-    padding: 6px;
+    background-color: #FDEED9;   /*фоновый цвет*/
+    margin: -6px;    /*внешний отступ*/
+    padding: 6px;       /*внутренний отступ*/
 }
 
 
 .navbar {
-    margin: 5px;
-    padding: 10px;
-    list-style-type: none;
-    width: 100%;
-    text-align: left;
+    margin: 5px;    /*внешний отступ*/
+    padding: 10px;  /*внутренний отступ*/
+    list-style-type: none;  /*нумерация списка(в данном случае ее отсутствие)*/
+    width: 100%;    /*ширина*/
+    text-align: left;   /*выравнивание текста по левому краю*/
 }
 #navbar a {
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    width: 100%;
+    color: #fff; /*цвет*/
+    padding: 5px 10px;  /*внутренний отступ*/
+    text-decoration: none;  /*выделение текста(подчеркивание сплошной линией, волнистой и т.д.), в данном случае отсутствие выделения*/
+    font-weight: bold;  /*жирный шрифт*/
+    display: inline-block;  /*расположение дочерних элементов горизонтально*/
+    width: 100%;    /*ширина*/
 
 }
 #navbar a:hover {
-    border-radius: 20px 5px;
-    background-color: #0066FF;
+    border-radius: 20px 5px;    /*радиус рамки*/
+    background-color: #0066FF;    /*фоновый цвет*/
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    display: flex;   /*добавление дочерним элементам свойства flex*/
+    flex-direction: row;    /*расположение элементов flex горизонтально друг за другом*/
+    overflow: hidden;   /*прокрутка элемента(включена, но скрыта)*/
 }
 
 
 .users {
-    width: 200px;
-    height: 100%;
-    float: left;
-    overflow-y: scroll;
+    width: 200px;   /*ширина*/
+    height: 100%;   /*высота*/
+    float: left;    /*выравнивание по левому краю*/
+    overflow-y: scroll; /*прокрутка элемента(вертикальная)*/
 }
 
 .icon-container {
-    width: 30px;
-    height: 40px;
-    position: relative;
-    padding-top: 16px;
-    padding-bottom: -10px;
-    margin-right: -40px;
+    width: 30px;    /*ширина*/
+    height: 40px;   /*высота*/
+    position: relative; /*позиция, при которой элемент устанавливается относительно его исходного места*/
+    padding-top: 16px;  /*внутренний отступ*/
+    padding-bottom: -10px;  /*внутренний отступ*/
+    margin-right: -40px;    /*внешний отступ*/
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+    height: 100%;   /*высота*/
+    width: 100%;    /*ширина*/
+    border-radius: 50%; /*радиус рамки*/
 
 }
 
 .status-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: grey;
-    border: 2px solid white;
-    bottom: 0;
-    right: 0;
-    position: absolute;
+    width: 15px;    /*ширина*/
+    height: 15px;   /*высота*/
+    border-radius: 50%; /*радиус рамки*/
+    background-color: grey;    /*фоновый цвет*/
+    border: 2px solid white;    /*рамка из сплошной линии вокруг элемента шириной 2 пикселя белого цвета*/
+    bottom: 0;  /*нижний отступ рамки, чтобы индикатор онлайна находился на изображении пользовател*/
+    right: 0;   /*правый отступ рамки, чтобы индикатор онлайна находился на изображении пользовател*/
+    position: absolute; /*фиксированная позиция элемента*/
 }
 
 .list-users {
-    flex-direction: row;
+    flex-direction: row;    /*расположение элементов flex горизонтально друг за другом*/
 }
 .username {
-    font-size: 16px;
-    flex-grow: 1;
-    margin-left: 45px;
-    margin-top: 20px;
+    font-size: 16px;    /*размер шрифта*/
+    flex-grow: 1;   /*индекс элемента, используемый для того, чтобы элемент занял всё свободное оставшее место в родительском элементе*/
+    margin-left: 45px; /*внешний отступ*/
+    margin-top: 20px;   /*внешний отступ*/
 }
 .icon-name-user {
-    display: flex;
-    flex-direction: row;
+    display: flex;   /*добавление дочерним элементам свойства flex*/
+    flex-direction: row;    /*расположение элементов flex горизонтально друг за другом*/
 }
 
 .chat {
-    float: left;
-    flex-grow: 1;
-    overflow-y: scroll;
+    float: left;    /*выравнивание по левому краю*/
+    flex-grow: 1;   /*индекс элемента, используемый для того, чтобы элемент занял всё свободное оставшее место в родительском элементе*/
+    overflow-y: scroll; /*прокрутка элемента(вертикальная)*/
 }
 
 .me {
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid #808080;
-    border-radius: 3px;
-    background-color: #AFEEEE;
+    margin: 10px;   /*внешний отступ*/
+    padding: 5px;   /*внутренний отступ*/
+    border: 2px solid #808080;  /*рамка из сплошной линии вокруг элемента шириной 2 пикселя серого цвета*/
+    border-radius: 3px; /*радиус рамки*/
+    background-color: #AFEEEE;     /*фоновый цвет*/
 }
 
 .companion-name {
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid #808080;
-    border-radius: 3px;
+    margin: 10px;   /*внешний отступ*/
+    padding: 5px;   /*внутренний отступ*/
+    border: 2px solid #808080;  /*рамка из сплошной линии вокруг элемента шириной 2 пикселя серого цвета*/
+    border-radius: 3px; /*радиус рамки*/
 
 }
 
 .user-name {
-    font-size: 18px;
-
-    font-weight: bold;
-    margin: 5px;
+    font-size: 18px;    /*размер шрифта*/
+    font-weight: bold;  /*жирный шрифт*/
+    margin: 5px;    /*внешний отступ*/
 }
 
 .message{
-    font-size: 18px;
+    font-size: 18px;    /*размер шрифта*/
 }
 
 .msg-time {
-    font-size: 14px;
-    font-style: italic;
+    font-size: 14px;    /*размер шрифта*/
+    font-style: italic; /*добавление курсива*/
 }
 
 .footer {
-    min-height: 100px;
-    background-color: #FDEED9;
+    min-height: 100px;  /*высота*/
+    background-color: #FDEED9;    /*фоновый цвет*/
 }
 
 input[type=text] {
-    background-color: lightgrey;
-    margin: 10px;
+    background-color: lightgrey;    /*фоновый цвет*/
+    margin: 10px;   /*внешний отступ*/
 }
 
 .entry-field {
-    height: 50px;
-    width: 60%;
+    height: 50px;   /*высота*/
+    width: 60%; /*ширина*/
 }
 
 .btn-send {
-    height: 50px;
-    width: 80px;
-    border: 2px solid #808080;
-    border-radius: 3px;
+    height: 50px;   /*высота*/
+    width: 80px;    /*ширина*/
+    border: 2px solid #808080;  /*рамка из сплошной линии вокруг элемента шириной 2 пикселя серого цвета*/
+    border-radius: 3px; /*радиус рамки*/
 }
